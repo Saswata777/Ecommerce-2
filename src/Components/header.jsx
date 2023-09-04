@@ -25,7 +25,7 @@ const Header = () => {
                 <Link to="/">Shopping Cart</Link>
           </Navbar.Brand>
           <Navbar.Text className='search'>
-                <Form.Control type="text" placeholder="Normal text" style={{width: 500}} className='m-auto' onChange={(e)=>{productDispatch({type:'FILTER_BY_SEARCH', payload: e.target.value})}} />
+                <Form.Control type="text" placeholder="Search the product" style={{width: 500}} className='m-auto' onChange={(e)=>{productDispatch({type:'FILTER_BY_SEARCH', payload: e.target.value})}} />
           </Navbar.Text>
             <Nav>
                     <Dropdown style={{marginRight:'200px'}}>
